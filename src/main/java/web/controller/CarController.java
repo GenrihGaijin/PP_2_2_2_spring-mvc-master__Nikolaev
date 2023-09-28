@@ -13,8 +13,8 @@ public class CarController {
     @Autowired
     private CarsDao  carsDao;
     @GetMapping("/cars")
-    public String carsViews (@RequestParam(value = "count", required = false) Integer count, Model model){
-
+    public String carsViews (@RequestParam(value = "count", required = false) int count, Model model){
+    model.addAttribute("cars",carsDao.getCarsList(count));
         return "cars";
     }
 

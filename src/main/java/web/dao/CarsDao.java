@@ -1,6 +1,5 @@
 package web.dao;
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 import web.model.Cars;
 
@@ -19,7 +18,7 @@ public class CarsDao {
         carsList.add(new Cars(++Cars_count, "Gazel", 2500));
     }
 
-    public List<Cars> getCarsList() {
+    public List<Cars> getCarsList(int count) {
         return carsList;
     }
     public List<Cars> getCountCars(int count){
