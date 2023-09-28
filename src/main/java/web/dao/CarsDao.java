@@ -21,9 +21,15 @@ public class CarsDao {
     public List<Cars> getCarsList() {
         return carsList;
     }
-    public List<Cars> getCountCars(int count){
+    public List<Cars> getCountCars(String count){
+        int cc ;
+        if (count == null){
+            cc= carsList.size();
+        } else {
+            cc = Integer.parseInt(count);
+        }
         List <Cars> countCars = new ArrayList<>();
-        for(int i = 0; i<count; i++){
+        for(int i = 0; i<cc; i++){
             countCars.add(carsList.get(i));
         }
 return countCars;
