@@ -18,7 +18,7 @@ public class CarsDao {
         carsList.add(new Cars(++Cars_count, "Gazel", 2500));
     }
 
-    public List<Cars> getCarsList(int count) {
+    public List<Cars> getCarsList() {
         return carsList;
     }
     public List<Cars> getCountCars(int count){

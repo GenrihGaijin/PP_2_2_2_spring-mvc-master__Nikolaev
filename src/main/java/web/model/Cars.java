@@ -41,6 +41,10 @@ public class Cars {
 
     @Override
     public String toString() {
-        return "Im a Car";
+        return "Cars{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", weight=" + weight +
+                '}';
     }
 }
