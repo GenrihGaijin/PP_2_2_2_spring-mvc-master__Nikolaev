@@ -14,7 +14,8 @@ public class Cars {
         return weight;
     }
 
-    public Cars(){}
+    public Cars() {
+    }
 
 
     public Cars(int id, String name, int weight) {

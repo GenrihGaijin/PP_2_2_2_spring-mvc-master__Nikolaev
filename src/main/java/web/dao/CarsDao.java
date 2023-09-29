@@ -5,10 +5,12 @@ import web.model.Cars;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Component
 public class CarsDao {
     private static int Cars_count;
     private List<Cars> carsList;
+
     {
         carsList = new ArrayList<>();
         carsList.add(new Cars(++Cars_count, "Lada", 1000));
@@ -21,19 +23,20 @@ public class CarsDao {
     public List<Cars> getCarsList() {
         return carsList;
     }
-    public List<Cars> getCountCars(String count){
-        int cc ;
-        if (count == null || Integer.parseInt(count) > 5 ){
-            cc= carsList.size();
+
+    public List<Cars> getCountCars(String count) {
+        int cc;
+        if (count == null || Integer.parseInt(count) > 5) {
+            cc = carsList.size();
         } else {
             cc = Integer.parseInt(count);
         }
-        List <Cars> countCars = new ArrayList<>();
-        for(int i = 0; i<cc; i++){
+        List<Cars> countCars = new ArrayList<>();
+        for (int i = 0; i < cc; i++) {
             countCars.add(carsList.get(i));
         }
-return countCars;
-        }
+        return countCars;
     }
+}
 
 
