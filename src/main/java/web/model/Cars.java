@@ -1,7 +1,9 @@
 package web.model;
 
 public class Cars {
+
     private int id;
+
     private String name;
 
     private int weight;
@@ -16,7 +18,6 @@ public class Cars {
 
     public Cars() {
     }
-
 
     public Cars(int id, String name, int weight) {
         this.id = id;

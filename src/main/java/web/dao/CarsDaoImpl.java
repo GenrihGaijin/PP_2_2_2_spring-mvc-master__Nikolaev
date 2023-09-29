@@ -8,7 +8,9 @@ import java.util.List;
 
 @Component
 public class CarsDaoImpl implements CarsDao {
+
     private static int Cars_count;
+
     private List<Cars> carsList;
 
     {
