@@ -23,7 +23,7 @@ public class CarsDao {
     }
     public List<Cars> getCountCars(String count){
         int cc ;
-        if (count == null){
+        if (count == null || Integer.parseInt(count) > 5 ){
             cc= carsList.size();
         } else {
             cc = Integer.parseInt(count);
